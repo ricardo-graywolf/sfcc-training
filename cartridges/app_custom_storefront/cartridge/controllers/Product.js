@@ -4,6 +4,11 @@ var server = require('server');
 var page = module.superModule;        //inherits functionality from next Product.js found to the right on the cartridge path
 server.extend(page);                  //extends existing server object with a list of new routes from the Product.js found by module.superModule
 
+
+/* server.replace('Show', server.middleware.get, function(req, res, next){
+    res.render('product/components/descriptionAndDetails'); //your new template located in the route app_custom_storefront/cartridge/templates/default/myNewTemplate.isml
+    next();
+}); */
 server.append('Show', function (req, res, next) { //adds additional middleware
     var viewData = res.getViewData();
     viewData.product.reviews = [{
@@ -22,6 +27,6 @@ server.append('Show', function (req, res, next) { //adds additional middleware
 
     res.setViewData(viewData);
     next();
-});
+}); 
 
 module.exports = server.exports();
