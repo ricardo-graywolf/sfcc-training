@@ -30,7 +30,7 @@
                     </isif>
                 </isloop>
             </isif>
-            <a href="${URLUtils.url('/SFRAForm-Show')}" encoding="" id="myForm" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Example Form</a>
+            <a href="${URLUtils.url('/SFRAForm-Show')}" encoding="" id="myForm" class="nav-link" style="color:#FFFFFF" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Example Form</a>
             <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
             <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
         </ul>
