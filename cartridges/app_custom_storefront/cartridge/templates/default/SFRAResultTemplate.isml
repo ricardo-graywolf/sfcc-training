@@ -1,0 +1,5 @@
+<isdecorate template="common/layout/page">
+    <div class="container">
+        <p>Nice to meet you, ${pdict.nickname} ${pdict.Lastname}.</p><br/>    
+    </div>
+</isdecorate>

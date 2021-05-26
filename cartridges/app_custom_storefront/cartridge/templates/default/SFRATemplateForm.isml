@@ -1,0 +1,17 @@
+<isdecorate template="common/layout/page">
+    <form id="testForm" action="${pdict.actionUrl}"  class="login hello-form" method="POST"
+        name="SFRAHelloForm" >
+
+        <div class="form-group required">
+            <label> Nickname: </label> 
+            <input type="input" id="nickname"
+                class="form-control" placeholder="ejemplo" name="nickname">
+            <label> Lastname: </label> 
+            <input type="input" id="Lastname"
+                class="form-control" placeholder="Garcia" name="Lastname">
+        </div>        
+        <button type="submit" class="btn btn-block btn-primary">Submit</button>
+        
+    </form>
+
+</isdecorate>
